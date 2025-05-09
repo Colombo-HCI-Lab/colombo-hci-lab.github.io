@@ -456,3 +456,9 @@ footer {
 .news-arrow:hover {
   color: #fb0000;
 }
+
+#research-areas-section .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

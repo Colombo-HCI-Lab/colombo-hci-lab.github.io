@@ -1,144 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Colombo HCI Lab</title>
-
-  <!-- Mavo -->
-  <link rel="stylesheet" href="https://get.mavo.io/mavo.css">
-  <script src="https://get.mavo.io/mavo.js"></script>
-
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <!-- PDF icon from FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
 <body mv-app="colombohcilab" mv-storage="data/project.json">
+  <!-- Header placeholder -->
+  <div id="header-placeholder"></div>
 
-<!-- Header placeholder -->
-<div id="header-placeholder"></div>
-
-<!-- Banner Section -->
-<section id="banner" class="text-center py-3">
-  <div class="container">
-    <h1>Research Areas</h1>
-  </div>
-</section>  
-
- <!-- Main content -->
- <main id="main" class="container my-5">
-
-  <h2 class="lead" property="bannerDescription" mv-edit-text>
-    <!-- The description will auto-load here -->
-  </h2>
-
-  <section id="projects" class="text-center">
-    <div class="row g-4" id="projects-container">
-      <!-- Projects will be loaded here -->
+  <!-- Banner -->
+  <section id="banner" class="text-center py-3">
+    <div class="container">
+      <h1>Research Areas & Publications</h1>
+      
     </div>
   </section>
-</main>
 
-<!-- Modal to show project description -->
-<div class="modal fade" id="descriptionModal" tabindex="-1" aria-labelledby="descriptionModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered"> <!-- Centered modal -->
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="descriptionModalLabel">Project Details</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  <main id="main" class="container my-5">
+    <h2 class="lead" property="bannerDescription" mv-edit-text>
+      <!-- The description will auto-load here -->
+    </h2>
+    
+   <!-- Research Areas Section -->
+<section id="research-areas-section" class="mt-4">
+  <h2 class="text-center mb-4">Research Areas</h2>
+  <div class="row justify-content-center">
+    <article class="col-12 col-md-3 mb-4 d-flex"
+      mv-multiple
+      property="projects">
+      <div class="w-100 p-3 bg-white rounded shadow-sm text-center">
+        <div class="fw-semibold" style="font-size:1.08rem;" property="name"></div>
+        <div class="mt-2" style="font-size:0.97rem;" property="description"></div>
+        <div class="mt-2 text-muted" style="font-size:0.95rem;">
+          <span property="researchers" mv-multiple mv-attribute="none"></span>
+        </div>
       </div>
-      <div class="modal-body" id="project-description">
-        <!-- Description will be inserted here -->
-      </div>
-    </div>
+    </article>
   </div>
-</div>
+</section>
 
-<!-- Bootstrap JS Bundle -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-<!-- Script to fetch and display projects -->
-<script>
-  // Fetch project data from project.json
-  fetch('data/project.json')
-    .then(response => response.json())
-    .then(data => {
-      const projects = data.projects;
-      const container = document.getElementById('projects-container');
 
-      projects.forEach(project => {
-        const projectCard = document.createElement('div');
-        projectCard.classList.add('col-md-4', 'd-flex');
-
-        projectCard.innerHTML = `
-          <div class="card shadow-sm w-100 d-flex flex-column">
-            <img src="${project.image}" class="card-img-top" alt="${project.name}" />
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">${project.name}</h5>
-              <button class="btn btn-primary mt-auto" onclick="showDescription('${project.description.replace(/'/g, "\\'")}')">Read More</button>
+    <!-- Publications Section -->
+<section id="publications-section" class="mt-5">
+      <h2 class="mb-4">Publications</h2>
+      <div class="row">
+        <article class="col-12 col-md-6 mb-4"
+          mv-multiple
+          property="publications">
+          <div class="d-flex align-items-start bg-white p-3 rounded shadow-sm h-100">
+            <img src="[if(image, image, 'images/default-paper.jpg')]" alt="Paper image" style="width:60px;height:60px;object-fit:cover;border-radius:8px;margin-right:18px;" property="image">
+            <div>
+              <div class="fw-bold" style="font-size:1.05rem;" property="title"></div>
+              <div class="text-muted" style="font-size:0.97rem;" property="authors"></div>
+              <div style="font-size:0.95rem;color:#1565c0;" property="venue"></div>
+              <div style="font-size:0.96rem;margin:6px 0;" property="description"></div>
+              <a href="[pdf]" target="_blank" style="font-size:1rem;color:#fb0000;text-decoration:none;">
+                <i class="fa-solid fa-file-pdf"></i> PDF
+              </a>
             </div>
           </div>
-        `;
-        
-        container.appendChild(projectCard);
-      });
-    })
-    .catch(error => console.error("Failed to load projects:", error));
+        </article>
+      </div>
+    </section>
+  </main>
 
-  // Function to show project description in modal
-  function showDescription(description) {
-    document.getElementById('project-description').innerText = description;
-    var myModal = new bootstrap.Modal(document.getElementById('descriptionModal'));
-    myModal.show();
-  }
-</script>
+  <!-- Footer placeholder -->
+  <div id="footer-placeholder"></div>
 
-<!-- Footer placeholder -->
-<div id="footer-placeholder"></div>
-<!-- Bootstrap JS Bundle -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-<!-- Custom main.js -->
-<script src="js/main.js"></script>
+  <!-- Load header and footer -->
+  <script>
+    fetch('header.html').then(res => res.text()).then(data => document.getElementById('header-placeholder').innerHTML = data);
+    fetch('footer.html').then(res => res.text()).then(data => document.getElementById('footer-placeholder').innerHTML = data);
+  </script>
 
-<script>
- // Load header
- fetch('header.html')
-   .then(res => res.text())
-   .then(data => document.getElementById('header-placeholder').innerHTML = data);
-
- // Load footer
- fetch('footer.html')
-   .then(res => res.text())
-   .then(data => document.getElementById('footer-placeholder').innerHTML = data);
-</script>
-
-
-<script>
-  // Wait until the header is loaded
-  document.addEventListener('DOMContentLoaded', function () {
-    // Give the browser a moment to insert the header
-    setTimeout(function () {
-      // Get current page filename
-      var path = window.location.pathname.split('/').pop();
-      if (path === "") path = "index.html"; // Default to index.html if root
-
-      // Find all nav links
-      var navLinks = document.querySelectorAll('.nav-menu .nav-link');
-      navLinks.forEach(function(link) {
-        var href = link.getAttribute('href');
-        if (href === path) {
-          link.parentElement.classList.add('active');
-        }
-      });
-    }, 100); // Adjust delay if needed
-  });
-</script>
+  <!-- Navbar active highlighting -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      setTimeout(function () {
+        var path = window.location.pathname.split('/').pop();
+        if (path === "") path = "index.html";
+        var navLinks = document.querySelectorAll('.nav-menu .nav-link');
+        navLinks.forEach(function(link) {
+          var href = link.getAttribute('href');
+          if (href === path) {
+            link.parentElement.classList.add('active');
+          }
+        });
+      }, 100);
+    });
+  </script>
+<script src="https://get.mavo.io/mavo.js"></script>
+<link rel="stylesheet" href="https://get.mavo.io/mavo.css">
 
 </body>
-
 </html>

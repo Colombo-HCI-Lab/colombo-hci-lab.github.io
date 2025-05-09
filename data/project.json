@@ -1,20 +1,47 @@
 {
-    "projects": [
-      {
-        "name": "Project 1",
-        "image": "images/project1.jpg",
-        "description": "This is a detailed description of Project 1. It discusses the goals, outcomes, and technologies used in the project."
-      },
-      {
-        "name": "Project 2",
-        "image": "images/project2.jpg",
-        "description": "This is a detailed description of Project 2. It explains the project's objectives, implementation, and results."
-      },
-      {
-        "name": "Project 3",
-        "image": "images/project3.jpg",
-        "description": "Project 3 explores innovative solutions to common challenges. Here's an overview of the project's work and contributions."
-      }
-    ]
-  }
-  
+  "bannerDescription":"Discover our ongoing research projects and explore our latest publications in Human-Computer Interaction and related fields.",  
+  "projects": [
+    {
+      "id": "deepfake-literacy",
+      "name": "Deepfake Literacy Project",
+      "description": "Educating the public to recognize and respond to deepfake media.",
+      "researchers": ["Dr. Smith", "Ms. Lee", "Mr. Perera"]
+    },
+    {
+      "id": "topic-2",
+      "name": "Research Topic 02",
+      "description": "Short description for topic 2.",
+      "researchers": ["Researcher A", "Researcher B"]
+    },
+    {
+      "id": "deepfake-literacy",
+      "name": "Deepfake Literacy Project",
+      "description": "Educating the public to recognize and respond to deepfake media.",
+      "researchers": ["Dr. Smith", "Ms. Lee", "Mr. Perera"]
+    },
+    {
+      "id": "topic-2",
+      "name": "Research Topic 02",
+      "description": "Short description for topic 2.",
+      "researchers": ["Researcher A", "Researcher B"]
+    }
+  ],
+  "publications": [
+    {
+      "title": "Title of Paper 01",
+      "authors": "Author 1, Author 2",
+      "venue": "Conference Name",
+      "description": "Brief description of the paper.",
+      "pdf": "papers/paper1.pdf",
+      "image": "images/paper1.jpg"
+    },
+    {
+      "title": "Title of Paper 02",
+      "authors": "Author 3, Author 4",
+      "venue": "Conference Name",
+      "description": "Brief description of the paper.",
+      "pdf": "papers/paper2.pdf",
+      "image": "images/paper2.jpg"
+    }
+  ]
+}
