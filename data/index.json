@@ -1,14 +1,50 @@
 {
   "bannerDescription": "The Colombo HCI lab at University of  Colombo School of Computing. We are working on exciting research in Human -Computer Interaction. By focusing on user needs, testing new ways to interact with technology, and ensuring our designs are practical, we aim to create technologies that improve everyday life.",
-    "whatWeDo": {
-      "title": "What We Do",
-      "description": "In the HCI lab at UCSC, we're working on exciting research in Human-Computer Interaction. Our team is involved in a Google-funded project where we're exploring the impact of AI and developing interventions to address its potential harms. By focusing on user needs, testing new ways to interact with technology, and ensuring our designs are practical, we aim to create technologies that improve everyday life.",
-      "images": [
-        "images/img1.jpg",
-        "images/img2.jpg",
-        "images/img3.jpg",
-        "images/img4.jpg"
-      ]
+"projects": [
+    {
+      "image": "images/project1.jpg",
+      "title": "Deepfake Literacy Project",
+      "link": "research.html#deepfake-literacy",
+      "researchers": "Dr. A. Silva, Ms. B. Fernando"
+    },
+    {
+      "image": "images/project2.jpg",
+      "title": "AI Literacy Project",
+      "link": "research.html#ai-literacy",
+      "researchers": "Dr. C. Perera, Mr. D. Jayasinghe"
+    },
+    {
+      "image": "images/project3.jpg",
+      "title": "Accessible UX for Elders",
+      "link": "research.html#accessible-ux",
+      "researchers": "Ms. E. Wijesinghe, Mr. F. Gunasekara"
     }
-  
+  ],
+  "news": [
+    {
+      "date": "Feb 2025",
+      "heading": "Amy is a 2025 Sloan Research Fellow",
+      "link": "https://example.com/news1"
+    },
+    {
+      "date": "Feb 2025",
+      "heading": "Xinyi presents at UW Data Science Seminar at the eScience Institute",
+      "link": "https://example.com/news2"
+    },
+    {
+      "date": "Feb 2025",
+      "heading": "Andre is a 2025 Fannie and John Hertz Fellowship finalist",
+      "link": "https://example.com/news3"
+    },
+    {
+      "date": "Dec 2024",
+      "heading": "Xinyi is a Rising Star in EECS and Data Science",
+      "link": "https://example.com/news4"
+    },
+    {
+      "date": "Dec 2024",
+      "heading": "Teanna presents at the 2025 World Engineering Education Forum (WEEF)",
+      "link": "https://example.com/news5"
+    }
+  ]
 }

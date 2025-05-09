@@ -5,117 +5,120 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Colombo HCI Lab</title>
-
   <!-- Mavo -->
   <link rel="stylesheet" href="https://get.mavo.io/mavo.css">
   <script src="https://get.mavo.io/mavo.js"></script>
-
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css">
-
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body mv-app="colombohcilab" mv-storage="data/index.json">
 
-  <!-- Header place holder-->
+  <!-- Header placeholder -->
   <div id="header-placeholder"></div>
 
   <!-- Banner Section -->
   <section id="banner" class="text-center py-3">
     <div class="container">
       <h1>Welcome to Colombo HCI Lab of UCSC</h1>
-      
     </div>
   </section>
-  
-  </section>  
+
   <!-- Main Content -->
   <main id="main" class="container my-5">
-  
+
     <h2 class="lead" property="bannerDescription" mv-edit-text>
       <!-- The description will auto-load here -->
     </h2>
 
-   <!-- What We Do Section -->
-<section class="container my-5">
-  <div class="row align-items-center">
-    <!-- Text Side -->
-    <div class="col-md-6 mb-4 mb-md-0">
-      <h2 style="font-size: 2.5rem; font-weight: 700; color: #2c3e50;">What We Do</h2>
-      <p style="font-size: 1.1rem; color: #555; line-height: 1.8;">
-      </p>
+    <div class="row">
+      <!-- Projects Section -->
+      <section class="col-lg-8 col-md-7" id="projects-section">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-vertical">
+          <div class="project-card mb-4" mv-multiple property="projects">
+            <div class="row g-0 align-items-center">
+              <!-- Image Column (left-aligned) -->
+              <div class="col-auto">
+                <img property="image" src="images/default_project.jpg" alt="Project image" class="project-img">
+              </div>
+              <!-- Info Column -->
+              <div class="col">
+                <!-- Project Title as Link -->
+                <a property="link" mv-default="[link]" target="_blank" class="project-title"
+                   mv-edit-text>
+                  <span property="title" mv-edit-text></span>
+                </a>
+                <div>
+                  <span class="project-researchers" property="researchers" mv-edit-text></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- News Section -->
+      <aside class="col-lg-4 col-md-5" id="news-section">
+        <h2 class="section-title">News</h2>
+        <ul class="news-list">
+          <li class="news-item d-flex align-items-center" mv-multiple property="news">
+            <span class="news-date" property="date" mv-edit-text></span>
+            <!-- News Heading as Link -->
+            <a href="[link]" class="news-heading ms-2" target="_blank">
+              <span property="heading" mv-edit-text></span>
+            </a>
+            
+
+            <a href="[link]" class="news-arrow ms-2" target="_blank" aria-label="Go to news">
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </li>
+        </ul>
+      </aside>
     </div>
+  </main>
 
-    <!-- Image Collage Side -->
-    <div class="col-md-6">
-      <div class="row g-2 shadow p-2 rounded" style="background: #fff;">
-        <div class="col-6">
-          <img src="images/img1.jpg" alt="Image 1" class="img-fluid rounded">
-        </div>
-        <div class="col-6">
-          <img src="images/img2.jpg" alt="Image 2" class="img-fluid rounded">
-        </div>
-        <div class="col-6">
-          <img src="images/img3.jpg" alt="Image 3" class="img-fluid rounded">
-        </div>
-        <div class="col-6">
-          <img src="images/img4.jpg" alt="Image 4" class="img-fluid rounded">
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-</main>
-
-  <!-- Footer  placeholder-->
+  <!-- Footer placeholder -->
   <div id="footer-placeholder"></div>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
   <!-- Custom JS -->
   <script src="js/main.js"></script>
 
-  
   <script>
-    //load header
-  fetch('header.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('header-placeholder').innerHTML = data;
-    });
-
-    //load footer
-    fetch('footer.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('footer-placeholder').innerHTML = data;
-    });  
-</script>
-<script>
-  // Wait until the header is loaded
-  document.addEventListener('DOMContentLoaded', function () {
-    // Give the browser a moment to insert the header
-    setTimeout(function () {
-      // Get current page filename
-      var path = window.location.pathname.split('/').pop();
-      if (path === "") path = "index.html"; // Default to index.html if root
-
-      // Find all nav links
-      var navLinks = document.querySelectorAll('.nav-menu .nav-link');
-      navLinks.forEach(function(link) {
-        var href = link.getAttribute('href');
-        if (href === path) {
-          link.parentElement.classList.add('active');
-        }
+    // Load header
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
       });
-    }, 100); // Adjust delay if needed
-  });
-</script>
 
+    // Load footer
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      });
+  </script>
+
+  <script>
+    // Wait until the header is loaded
+    document.addEventListener('DOMContentLoaded', function () {
+      setTimeout(function () {
+        var path = window.location.pathname.split('/').pop();
+        if (path === "") path = "index.html";
+        var navLinks = document.querySelectorAll('.nav-menu .nav-link');
+        navLinks.forEach(function (link) {
+          var href = link.getAttribute('href');
+          if (href === path) {
+            link.parentElement.classList.add('active');
+          }
+        });
+      }, 100);
+    });
+  </script>
 </body>
-
 </html>

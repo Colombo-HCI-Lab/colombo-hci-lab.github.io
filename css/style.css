@@ -358,3 +358,101 @@ footer {
   border-radius: 10px;
   margin-top: 20px;
 }
+
+/* ====== Home page ====== */
+/* Projects Section */
+.projects-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+  padding: 18px 15px 10px 15px;
+  min-width: 220px;
+  max-width: 100%;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.project-card:hover {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  transform: translateY(-4px) scale(1.03);
+}
+
+.project-img {
+  width: 85px;
+  height: 85px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid #eee;
+}
+
+.project-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #2c3e50;
+  text-decoration: underline;
+  transition: color 0.2s;
+  word-break: break-word;
+}
+
+.project-title:hover {
+  color: #0066cc;
+}
+
+.project-researchers {
+  font-size: 0.97rem;
+  color: #888;
+  word-break: break-word;
+}
+
+/* News Section */
+.news-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.news-item {
+  border-bottom: 1px solid #000000;
+  padding: 14px 0 10px 0;
+  display: flex;
+  align-items: left;
+  gap: 10px;
+}
+
+.news-date {
+  font-size: 1.01rem;
+  color: #555;
+  min-width: 85px;
+  font-weight: 500;
+}
+
+.news-heading {
+  font-size: 1.01rem;
+  color: #1565c0;
+  font-weight: 500;
+  text-decoration: underline;
+  transition: color 0.2s;
+  cursor: pointer;
+}
+
+.news-heading:hover {
+  color: #fb0000;
+}
+.news-arrow {
+  color: #1565c0;
+  font-size: 1.18rem;
+  transition: color 0.2s;
+  padding-top: 2px;
+}
+.news-arrow:hover {
+  color: #fb0000;
+}
