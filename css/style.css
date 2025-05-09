@@ -445,7 +445,7 @@ footer {
 }
 
 .news-heading:hover {
-  color: #fb0000;
+  color: #000000;
 }
 .news-arrow {
   color: #1565c0;
@@ -454,7 +454,7 @@ footer {
   padding-top: 2px;
 }
 .news-arrow:hover {
-  color: #fb0000;
+  color: #000000;
 }
 
 #research-areas-section .row {
