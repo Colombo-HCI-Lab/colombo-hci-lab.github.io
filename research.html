@@ -36,6 +36,11 @@
       property="projects">
       <div class="w-100 p-3 bg-white rounded shadow-sm text-center">
         <div class="fw-semibold" style="font-size:1.08rem;" property="name"></div>
+        <img src="[if(image, image, 'images/default-project.jpg')]" 
+         alt="Project image"
+         style="width:100%;height:180px;object-fit:cover;border-radius:8px;margin-bottom:12px;" 
+         property="image">
+        
         <div class="mt-2" style="font-size:0.97rem;" property="description"></div>
         <div class="mt-2 text-muted" style="font-size:0.95rem;">
           <span property="researchers" mv-multiple mv-attribute="none"></span>

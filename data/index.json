@@ -2,23 +2,30 @@
   "bannerDescription": "The Colombo HCI lab at University of  Colombo School of Computing. We are working on exciting research in Human -Computer Interaction. By focusing on user needs, testing new ways to interact with technology, and ensuring our designs are practical, we aim to create technologies that improve everyday life.",
 "projects": [
     {
-      "image": "images/project1.jpg",
-      "title": "Deepfake Literacy Project",
-      "link": "research.html#deepfake-literacy",
+      "image": "images/project1.jpeg",
+      "title": "Deepfake Literacy",
+      "link": "research.html#topic-1",
       "researchers": "Dr. A. Silva, Ms. B. Fernando"
     },
     {
-      "image": "images/project2.jpg",
-      "title": "AI Literacy Project",
-      "link": "research.html#ai-literacy",
-      "researchers": "Dr. C. Perera, Mr. D. Jayasinghe"
+      "image": "images/project2.jpeg",
+      "title": "Cognitive-Aware Interfaces",
+      "link": "research.html#topic-2",
+      "researchers": "Samudi Perera"
     },
     {
       "image": "images/project3.jpg",
-      "title": "Accessible UX for Elders",
-      "link": "research.html#accessible-ux",
+      "title": "Explainable Text Summarization",
+      "link": "research.html#topic-3",
       "researchers": "Ms. E. Wijesinghe, Mr. F. Gunasekara"
+    },
+    {
+      "image": "images/project4.jpg",
+      "title": "AI-Driven Development",
+      "link": "research.html#topic-4",
+      "researchers": "Nipun Bhathiya"
     }
+
   ],
   "news": [
     {
