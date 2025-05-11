@@ -30,7 +30,17 @@
       "github": "https://github.com/dilaxshini-dunstan"
     }
   ],
-  "volunteers": [
+  "fourthYears": [
+    {
+      "name": "Name",
+      "photo": "images/RA_2.jpg",
+      "linkedin": "https://www.linkedin.com/in/dilaxshini-dunstan",
+      "email": "mailto:dilaxshini16dunstan@gmail.com",
+      "github": "https://github.com/dilaxshini-dunstan"
+    }
+    ],
+      
+      "volunteers": [
     {
       "name": "Volunteer01",
       "photo": "images/ra.png",
