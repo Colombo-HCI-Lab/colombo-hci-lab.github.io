@@ -63,6 +63,7 @@ h1, h2, h4, h5 {
 /* Navigation */
 .navbar {
  margin-top: 15px;
+ display: block;
 }
 
 .nav-menu {
@@ -118,6 +119,44 @@ h1, h2, h4, h5 {
 
 .nav-menu a:hover {
   color: #fe0000;
+}
+
+/* Hamburger icon hidden on desktop */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .navbar.open {
+    display: block;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    
+  }
+
+  .nav-item {
+    list-style: none;
+    margin-bottom: 10px;
+  }
+
+  .nav-link {
+    text-decoration: none;
+  }
 }
 
 
@@ -461,4 +500,49 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+/* ====== Responsive: Header Navigation Toggle ====== */
+@media (max-width: 768px) {
+  .main-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo img {
+    height: 80px;
+  }
+
+  .header-text h1 {
+    font-size: 32px;
+  }
+
+  .navbar {
+    margin-top: 10px;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .nav-link {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+/* ====== Responsive: Footer ====== */
+@media (max-width: 768px) {
+  footer .container {
+    padding: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  footer small {
+    display: block;
+  }
 }

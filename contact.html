@@ -121,6 +121,20 @@
     }, 100); // Adjust delay if needed
   });
 </script>
+<script>
+  function toggleNav() {
+    var nav = document.getElementById("mainNav");
+    nav.classList.toggle("open");
+  }
+
+  window.addEventListener("click", function(event) {
+    const nav = document.getElementById("mainNav");
+    const hamburger = document.querySelector(".hamburger");
+    if (!nav.contains(event.target) && !hamburger.contains(event.target)) {
+      nav.classList.remove("open");
+    }
+  });
+</script>
 
 
 </body>
