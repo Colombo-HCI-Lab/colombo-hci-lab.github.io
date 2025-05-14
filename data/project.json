@@ -48,7 +48,7 @@
       "image": "images/paper2.jpg"
     },
     {
-      "title": "Title of Paper 01",
+      "title": "Title of Paper 03",
       "authors": "Author 1, Author 2",
       "venue": "Conference Name",
       "description": "Brief description of the paper.",
@@ -56,7 +56,7 @@
       "image": "images/paper1.jpg"
     },
     {
-      "title": "Title of Paper 02",
+      "title": "Title of Paper 04",
       "authors": "Author 3, Author 4",
       "venue": "Conference Name",
       "description": "Brief description of the paper.",
