@@ -15,25 +15,7 @@
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css">
-  <style>
-    /* Optional: Adjust spacing for the form */
-    .form-row {
-      display: flex;
-      gap: 1rem;
-      justify-content: space-between;
-    }
-    .form-row .form-group {
-      flex: 1;
-    }
-    .text-end {
-      text-align: right !important;
-    }
-    @media (max-width: 576px) {
-      .form-row {
-        flex-direction: column;
-      }
-    }
-  </style>
+  
 </head>
 
 <body mv-app="colombohcilab" mv-storage="data/contact.json">
@@ -58,6 +40,7 @@
     <section id="form" class="mb-5">
       <div class="contact-container">
         <div class="form-section" mv-app="contactform" mv-storage="local" mv-autosave="0">
+
           <form>
             <h3 class="mb-4">Leave Message</h3>
             <div class="form-row mb-3">
@@ -79,9 +62,15 @@
               <textarea property="message" class="form-control" id="message" rows="6" placeholder="Type your message here..." required></textarea>
             </div>
             <div class="text-end">
-              <button type="submit" class="btn btn-primary" disabled>Send Message</button>
+              <button type="submit" class="btn btn-primary">Send Message</button>
             </div>
           </form>
+          <!--Success Message of form submission-->
+          <div id="successMessage" class="submission-success" style="display: none;">
+            <h4>Thank you for your contacting us.</h4>
+            <p>We will get back to you as soon as possible.</p>
+
+          </div>
         </div>
       </div>
     </section>
@@ -96,7 +85,7 @@
             <div class="card-body">
               <h5 class="card-title">Dr.Dilrukshi Gamage</h5>
               <p class="card-text">
-                <strong>Position:</strong> Senior Lecturer, Primary Investigator of Colombo HCI Lab<br>
+                <strong>Position:</strong><br>&nbsp;&nbsp;&nbspPrimary Investigator of Colombo HCI Lab<br>&nbsp;&nbsp;&nbspSenior Lecturer<br>&nbsp;&nbsp;&nbspUniversity of Colombo School of Computing<br>
                 <strong>Email:</strong> <a href="mailto:dgs@ucsc.cmb.ac.lk">dgs@ucsc.cmb.ac.lk</a><br>
                 <!--<strong>Phone:</strong> +94 11 2581245<br>
                 <strong>Research Interests:</strong> Human-Computer Interaction, Usability, Accessibility-->
@@ -153,6 +142,7 @@
       }, 100);
     });
   </script>
+
   <script>
     function toggleNav() {
       var nav = document.getElementById("mainNav");
@@ -167,5 +157,58 @@
       }
     });
   </script>
+
+  <script>
+document.addEventListener("DOMContentLoaded", function() {
+  const form = document.querySelector('[mv-app="contactform"] form');
+  const contactFormApp = Mavo.get('contactform');
+
+  // Clear Mavo data if returning after submission
+  if(localStorage.getItem('submissionFlag')) {
+    if(contactFormApp) {
+      contactFormApp.clear();
+      contactFormApp.save(); // Force save empty state
+    }
+    localStorage.removeItem('submissionFlag');
+  }
+
+form.addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  if (!form.checkValidity()) {
+    form.reportValidity();
+    return;
+  }
+
+  // Collect form data manually
+  const formData = {
+    name: form.querySelector('[property="name"]').value,
+    email: form.querySelector('[property="email"]').value,
+    subject: form.querySelector('[property="subject"]').value,
+    message: form.querySelector('[property="message"]').value,
+    timestamp: new Date().toISOString()
+  };
+
+  // Store in localStorage (you can skip this if Mavo handles it)
+  const submissions = JSON.parse(localStorage.getItem('contactSubmissions') || '[]');
+  submissions.push(formData);
+  localStorage.setItem('contactSubmissions', JSON.stringify(submissions));
+
+  // Reset Mavo fields properly
+  if (contactFormApp) {
+    contactFormApp.unsavedChanges = false;
+    contactFormApp.store.clear();
+    contactFormApp.clear();
+  }
+
+  // Hide form and show confirmation
+  form.style.display = 'none';
+  document.getElementById("successMessage").style.display = 'block';
+
+});
+
+});
+</script>
+
 </body>
 </html>

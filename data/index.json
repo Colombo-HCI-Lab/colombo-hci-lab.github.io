@@ -5,25 +5,25 @@
       "image": "images/project1.png",
       "title": "Deepfake Literacy",
       "link": "research.html#topic-1",
-      "researchers": "Dr. A. Silva, Ms. B. Fernando"
+      "researchers": "Dr.Dilrukshi Gamage, Ms. Dilki Sewwandi, Ms. Dilaxshini Dunstan"
     },
     {
       "image": "images/project2.jpeg",
-      "title": "Cognitive-Aware Interfaces",
+      "title": "Cognitive Aware Interfaces",
       "link": "research.html#topic-2",
-      "researchers": "Samudi Perera"
+      "researchers": "Ms. Samudi Perera"
     },
     {
       "image": "images/project3.png",
-      "title": "Explainable Text Summarization",
+      "title": "AI Explainability",
       "link": "research.html#topic-3",
-      "researchers": "Ms. E. Wijesinghe, Mr. F. Gunasekara"
+      "researchers": "Ms. Nirasha Nelki"
     },
     {
       "image": "images/project4.png",
       "title": "AI-Driven Development",
       "link": "research.html#topic-4",
-      "researchers": "Nipun Bhathiya"
+      "researchers": "Mr. Nipun Bhathiya"
     }
 
   ],
