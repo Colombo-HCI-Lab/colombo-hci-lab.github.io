@@ -74,5 +74,19 @@
       "email": "mailto:daniel.lee@example.com",
       "github": "https://github.com/daniellee"
     }
+  ],
+  "collaborators": [
+    {
+      "name": "Prof.Arosha K. Bandara",
+      "photo": "images/AroshaBandara.jpeg",
+      "linkedin": "https://www.inkedin.com/in/akbandara",
+      "email": "mailto:arosha.bandara@open.ac.uk"
+    },
+    {
+      "name": "Dr.Min Zhang",
+      "photo": "images/Min.jpeg",
+      "linkedin": "https://www.linkedin.com/in/avaminzhang",
+      "email": "mailto:min.zhang@open.ac.uk"
+    }
   ]
 }
