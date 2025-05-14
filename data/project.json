@@ -5,8 +5,8 @@
       "id": "topic-1",
       "name": "Deepfake Literacy",
       "description": "Educating the public to recognize and respond to deepfake media.",
-      "researchers": ["Dr. Smith", "Ms. Lee", "Mr. Perera"],
-       "image": "images/project1.jpeg"
+      "researchers": ["Dilki Sewwandi,", "Dilaxshini Dunstan"],
+       "image": "images/project1.png"
     },
     {
       "id": "topic-2",
@@ -18,7 +18,7 @@
     {
       "id": "topic-3",
       "name": "Explainable Abstractive Text Summarization Using Transformer and LSTM Architectures: A Comparative Study",
-      "description": "This research focuses on building and comparing Transformer-based and LSTM-based models for explainable abstractive text summarization. It aims to improve user trust and understanding by integrating explanation mechanisms into the summarization process, and evaluates how different model architectures and explanation formats affect performance and user comprehension.",
+      "description": "This research focuses creating a LSTM-based and transformer-based explainable text summerization models  and conducting a comparative analysis on various metrics like explanation quality, summery quality and computational analysis.",
       "researchers": ["Nirasha Nelki"],
       "image": "images/project3.png"
     },
@@ -27,7 +27,7 @@
       "name": "Designing a New AI-Integrated Development Methodology for Enhanced Efficiency",
       "description": "This research introduces a new software development methodology that integrates AI agents across all phases—like planning, coding, testing, and maintenance—to improve team productivity, reduce delivery time, and enhance code quality. The framework is designed to be adaptable for different project types and team sizes, positioning AI as an active collaborator in modern development practices.",
       "researchers": ["Nipun Bhathiya"],
-      "image": "images/project4.jpeg"
+      "image": "images/project4.png"
     }
   ],
   "publications": [

@@ -8,6 +8,19 @@
   <link rel="stylesheet" href="css/style.css">
   <!-- PDF icon from FontAwesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+    .research-description {
+      display: none;
+      margin-top: 10px;
+      font-size: 0.97rem;
+      text-align: left;
+    }
+    .read-more-btn {
+      margin-top: 10px;
+      font-size: 0.95rem;
+      padding: 2px 14px;
+    }
+  </style>
 </head>
 
 <body mv-app="colombohcilab" mv-storage="data/project.json">
@@ -18,7 +31,6 @@
   <section id="banner" class="text-center py-3">
     <div class="container">
       <h1>Research Areas & Publications</h1>
-      
     </div>
   </section>
 
@@ -27,33 +39,34 @@
       <!-- The description will auto-load here -->
     </h2>
     
-   <!-- Research Areas Section -->
-<section id="research-areas-section" class="mt-4">
-  <h2 class="text-center mb-4">Research Areas</h2>
-  <div class="row justify-content-center">
-    <article class="col-12 col-md-3 mb-4 d-flex"
-      mv-multiple
-      property="projects">
-      <div class="w-100 p-3 bg-white rounded shadow-sm text-center">
-        <div class="fw-semibold" style="font-size:1.08rem;" property="name"></div>
-        <img src="[if(image, image, 'images/default-project.jpg')]" 
-         alt="Project image"
-         style="width:100%;height:180px;object-fit:cover;border-radius:8px;margin-bottom:12px;" 
-         property="image">
-        
-        <div class="mt-2" style="font-size:0.97rem;" property="description"></div>
-        <div class="mt-2 text-muted" style="font-size:0.95rem;">
-          <span property="researchers" mv-multiple mv-attribute="none"></span>
-        </div>
+    <!-- Research Areas Section -->
+    <section id="research-areas-section" class="mt-4">
+      <h2 class="text-center mb-4">Research Areas</h2>
+      <div class="row justify-content-center">
+        <article class="col-12 col-md-3 mb-4 d-flex"
+          mv-multiple
+          property="projects">
+          <div class="w-100 p-3 bg-white rounded shadow-sm text-center">
+            <div class="fw-semibold" style="font-size:1.08rem;" property="name"></div>
+            <img src="[if(image, image, 'images/default-project.jpg')]"
+                 alt="Project image"
+                 style="width:100%;height:180px;object-fit:cover;border-radius:8px;margin-bottom:12px;"
+                 property="image">
+            <!-- Hidden description, revealed on button click -->
+            <button type="button" class="btn btn-outline-primary read-more-btn" onclick="toggleDescription(this)">
+              Read More
+            </button>
+            <div class="research-description" property="description"></div>
+            <div class="mt-2 text-muted" style="font-size:0.95rem;">
+              <span property="researchers" mv-multiple mv-attribute="none"></span>
+            </div>
+          </div>
+        </article>
       </div>
-    </article>
-  </div>
-</section>
-
-
+    </section>
 
     <!-- Publications Section -->
-<section id="publications-section" class="mt-5">
+    <section id="publications-section" class="mt-5">
       <h2 class="mb-4">Publications</h2>
       <div class="row">
         <article class="col-12 col-md-3 mb-4 d-flex"
@@ -104,22 +117,33 @@
       }, 100);
     });
   </script>
-<script src="https://get.mavo.io/mavo.js"></script>
-<link rel="stylesheet" href="https://get.mavo.io/mavo.css">
-<script>
-  function toggleNav() {
-    var nav = document.getElementById("mainNav");
-    nav.classList.toggle("open");
-  }
-
-  window.addEventListener("click", function(event) {
-    const nav = document.getElementById("mainNav");
-    const hamburger = document.querySelector(".hamburger");
-    if (!nav.contains(event.target) && !hamburger.contains(event.target)) {
-      nav.classList.remove("open");
+  <script src="https://get.mavo.io/mavo.js"></script>
+  <link rel="stylesheet" href="https://get.mavo.io/mavo.css">
+  <script>
+    function toggleNav() {
+      var nav = document.getElementById("mainNav");
+      nav.classList.toggle("open");
     }
-  });
-</script>
 
+    window.addEventListener("click", function(event) {
+      const nav = document.getElementById("mainNav");
+      const hamburger = document.querySelector(".hamburger");
+      if (!nav.contains(event.target) && !hamburger.contains(event.target)) {
+        nav.classList.remove("open");
+      }
+    });
+
+    // Read More functionality
+    function toggleDescription(btn) {
+      const desc = btn.nextElementSibling;
+      if (desc.style.display === "block") {
+        desc.style.display = "none";
+        btn.innerText = "Read More";
+      } else {
+        desc.style.display = "block";
+        btn.innerText = "Hide";
+      }
+    }
+  </script>
 </body>
 </html>
