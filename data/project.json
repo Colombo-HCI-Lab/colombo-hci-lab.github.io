@@ -6,7 +6,7 @@
       "name": "Deepfake Literacy",
       "description": "Educating the public to recognize and respond to deepfake media.",
       "researchers": ["Dilki Sewwandi,", "Dilaxshini Dunstan"],
-       "image": "images/project1.jpeg"
+       "image": "images/project1.png"
     },
     {
       "id": "topic-2",
@@ -27,7 +27,7 @@
       "name": "Designing a New AI-Integrated Development Methodology for Enhanced Efficiency",
       "description": "This research introduces a new software development methodology that integrates AI agents across all phases—like planning, coding, testing, and maintenance—to improve team productivity, reduce delivery time, and enhance code quality. The framework is designed to be adaptable for different project types and team sizes, positioning AI as an active collaborator in modern development practices.",
       "researchers": ["Nipun Bhathiya"],
-      "image": "images/project4.jpeg"
+      "image": "images/project4.png"
     }
   ],
   "publications": [
