@@ -11,7 +11,7 @@
     {
       "id": "topic-2",
       "name": "Enhancing adaptive user interfaces through realtime cognitive load detection",
-      "description": "This research explores how Adaptive User Interfaces (AUIs) can be improved by integrating real-time cognitive load assessment to optimize user experience, reduce mental effort, and boost interaction quality. It focuses on detecting users' mental workload and dynamically adjusting interface elements—like layout and navigation—non-intrusively, making systems more intuitive and user-centered.",
+      "description": "This research explores how Adaptive User Interfaces (AUIs) can be improved by integrating real-time cognitive load assessment to optimize user experience, reduce mental effort, and boost interaction quality. It focuses on detecting users' mental workload and dynamically adjusting interface elements-like layout and navigation-non-intrusively, making systems more intuitive and user-centered.",
       "researchers": ["Samudi Perera"],
       "image": "/images/project2.jpeg"
     },
@@ -25,43 +25,26 @@
     {
       "id": "topic-4",
       "name": "Designing a New AI-Integrated Development Methodology for Enhanced Efficiency",
-      "description": "This research introduces a new software development methodology that integrates AI agents across all phases—like planning, coding, testing, and maintenance—to improve team productivity, reduce delivery time, and enhance code quality. The framework is designed to be adaptable for different project types and team sizes, positioning AI as an active collaborator in modern development practices.",
+      "description": "This research introduces a new software development methodology that integrates AI agents across all phases-like planning, coding, testing, and maintenance-to improve team productivity, reduce delivery time, and enhance code quality. The framework is designed to be adaptable for different project types and team sizes, positioning AI as an active collaborator in modern development practices.",
       "researchers": ["Nipun Bhathiya"],
       "image": "/images/project4.png"
     }
   ],
   "publications": [
     {
-      "title": "Title of Paper 01",
-      "authors": "Author 1, Author 2",
-      "venue": "Conference Name",
-      "description": "Brief description of the paper.",
-      "pdf": "/papers/paper1.pdf",
-      "image": "/images/paper1.jpg"
+      "title": "End User Authoring of Personalized Content Classifiers: Comparing Example Labeling, Rule Writing, and LLM Prompting",
+      "authors": "Leijie Wang, Kathryn Yurechko, Pranati Dani, Quan Ze (Jim) Chen, Amy Zhang",
+      "venue": "CHI 2025",
+      "description": "To make creating personal classifiers for content curation easier for such users, tools should support rapid initialization and iterative refinement. In this work, we then compare three strategies-(1) example labeling, (2) rule writing, and (3) large language model (LLM) prompting-for end users to build personal content classifiers in a lab experiment.",
+      "pdf": "#"
     },
     {
-      "title": "Title of Paper 02",
-      "authors": "Author 3, Author 4",
-      "venue": "Conference Name",
-      "description": "Brief description of the paper.",
-      "pdf": "/papers/paper2.pdf",
-      "image": "/images/paper2.jpg"
-    },
-    {
-      "title": "Title of Paper 03",
-      "authors": "Author 1, Author 2",
-      "venue": "Conference Name",
-      "description": "Brief description of the paper.",
-      "pdf": "/papers/paper1.pdf",
-      "image": "/images/paper1.jpg"
-    },
-    {
-      "title": "Title of Paper 04",
-      "authors": "Author 3, Author 4",
-      "venue": "Conference Name",
-      "description": "Brief description of the paper.",
-      "pdf": "/papers/paper2.pdf",
-      "image": "/images/paper2.jpg"
+      "title": "Title of the Research Paper",
+      "authors": "Authors of the paper",
+      "venue": "venue of the paper",
+      "description": "Abstract of the research paper",
+      "pdf": "#"
+      
     }
   ]
 }
