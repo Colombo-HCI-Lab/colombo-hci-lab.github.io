@@ -2,13 +2,13 @@
   "bannerDescription": "We are excited to introduce our team with you and happy to hear from motivated and passionate students and researchers who want to join and collaborate with us!",
   "director": {
     "name": "Dr.D.A.S.Atukorale",
-    "photo": "/colombo-hci-lab.github.io/images/director.jpg",
+    "photo": "/images/director.jpg",
     "linkedin": "https://www.linkedin.com/in/johndoe",
     "email": "mailto:aja@ucsc.cmb.ac.lk"
   },
   "supervisor": {
     "name": "Dr. Dilrukshi Gamage",
-    "photo": "/colombo-hci-lab.github.io/images/supervisor.jpg",
+    "photo": "/images/supervisor.jpg",
     "linkedin": "https://www.linkedin.com/in/dilrukshigamage/",
     "email": "mailto:dilrukshi.gamage@gmail.com"
    
@@ -17,14 +17,14 @@
   "researchAssistants": [
     {
       "name": "Dilki Sewwandi",
-      "photo": "/colombo-hci-lab.github.io/images/RA_1.png",
+      "photo": "/images/RA_1.png",
       "linkedin": "https://www.linkedin.com/in/dilki-sewwandi",
       "email": "mailto:dsewwandi2001@gmail.com",
       "github": "https://github.com/dilkiSewwandi"
     },
     {
       "name": "Dilaxshini Dunstan",
-      "photo": "/colombo-hci-lab.github.io/images/RA_2.jpg",
+      "photo": "/images/RA_2.jpg",
       "linkedin": "https://www.linkedin.com/in/dilaxshini-dunstan",
       "email": "mailto:dilaxshini16dunstan@gmail.com",
       "github": "https://github.com/dilaxshini-dunstan"
@@ -33,19 +33,19 @@
   "fourthYears": [
     {
       "name": "Samudi Perera",
-      "photo": "/colombo-hci-lab.github.io/images/samudi_image.jpg",
+      "photo": "/images/samudi_image.jpg",
       "linkedin": "https://www.linkedin.com/in/samudi-perera",
       "email": "mailto:samudiperera125@gmail.com",
       "github": "https://github.com/samudiperera09"
     },{
       "name": "Nipun Bhathiya",
-      "photo": "/colombo-hci-lab.github.io/images/4_nipun.jpg",
+      "photo": "/images/4_nipun.jpg",
       "linkedin": "https://www.linkedin.com/in/nipunbhathiya/",
       "email": "mailto:nipunbathiya1256@outlook.com",
       "github": "https://github.com/NightHawkNB"
     },{
       "name": "Nirasha Nelki",
-      "photo": "/colombo-hci-lab.github.io/images/nirasha_img.jpeg",
+      "photo": "/images/nirasha_img.jpeg",
       "linkedin": "https://www.linkedin.com/in/nirasha-nelki-84b1b421b/",
       "email": "mailto:nirashanelki@gmail.com",
       "github": "https://github.com/nirasha-nelki"
@@ -55,28 +55,28 @@
       "volunteers": [
     {
       "name": "Rashmi Gunawardana",
-      "photo": "/colombo-hci-lab.github.io/images/Rashmi.png",
+      "photo": "/images/Rashmi.png",
       "linkedin": "https://www.linkedin.com/in/rashmi-gunawardana1",
       "email": "mailto:nirashagunawardana9@gmail.com",
       "github": "https://github.com/RashmiNirasha"
     },
     {
       "name": "Oshan Mudannayake",
-      "photo": "/colombo-hci-lab.github.io/images/oshan.jpg",
+      "photo": "/images/oshan.jpg",
       "linkedin": "https://www.linkedin.com/in/ivantha/",
       "email": "mailto:oshan.ivantha@gmail.com",
       "github": "https://github.com/ivantha"
     },
     {
       "name": "Volunteer01",
-      "photo": "/colombo-hci-lab.github.io/images/ra.png",
+      "photo": "/images/ra.png",
       "linkedin": "https://www.linkedin.com/in/emilydavis",
       "email": "mailto:emily.davis@example.com",
       "github": "https://github.com/emilydavis"
     },
     {
       "name": "Volunteer02",
-      "photo": "/colombo-hci-lab.github.io/images/ra.png",
+      "photo": "/images/ra.png",
       "linkedin": "https://www.linkedin.com/in/daniellee",
       "email": "mailto:daniel.lee@example.com",
       "github": "https://github.com/daniellee"
@@ -85,13 +85,13 @@
   "collaborators": [
     {
       "name": "Prof.Arosha K. Bandara",
-      "photo": "/colombo-hci-lab.github.io/images/AroshaBandara.jpeg",
+      "photo": "/images/AroshaBandara.jpeg",
       "linkedin": "https://www.inkedin.com/in/akbandara",
       "email": "mailto:arosha.bandara@open.ac.uk"
     },
     {
       "name": "Dr.Min Zhang",
-      "photo": "/colombo-hci-lab.github.io/images/Min.jpeg",
+      "photo": "/images/Min.jpeg",
       "linkedin": "https://www.linkedin.com/in/avaminzhang",
       "email": "mailto:min.zhang@open.ac.uk"
     }
