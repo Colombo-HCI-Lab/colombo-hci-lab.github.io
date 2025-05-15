@@ -6,28 +6,28 @@
       "name": "Deepfake Literacy",
       "description": "Educating the public to recognize and respond to deepfake media.",
       "researchers": ["Dilki Sewwandi,", "Dilaxshini Dunstan"],
-       "image": "/images/project1.png"
+       "image": "../images/project1.png"
     },
     {
       "id": "topic-2",
       "name": "Enhancing adaptive user interfaces through realtime cognitive load detection",
       "description": "This research explores how Adaptive User Interfaces (AUIs) can be improved by integrating real-time cognitive load assessment to optimize user experience, reduce mental effort, and boost interaction quality. It focuses on detecting users' mental workload and dynamically adjusting interface elements—like layout and navigation—non-intrusively, making systems more intuitive and user-centered.",
       "researchers": ["Samudi Perera"],
-      "image": "/images/project2.jpeg"
+      "image": "../images/project2.jpeg"
     },
     {
       "id": "topic-3",
       "name": "Explainable Abstractive Text Summarization Using Transformer and LSTM Architectures: A Comparative Study",
       "description": "This research focuses creating a LSTM-based and transformer-based explainable text summerization models  and conducting a comparative analysis on various metrics like explanation quality, summery quality and computational analysis.",
       "researchers": ["Nirasha Nelki"],
-      "image": "/images/project3.png"
+      "image": "../images/project3.png"
     },
     {
       "id": "topic-4",
       "name": "Designing a New AI-Integrated Development Methodology for Enhanced Efficiency",
       "description": "This research introduces a new software development methodology that integrates AI agents across all phases—like planning, coding, testing, and maintenance—to improve team productivity, reduce delivery time, and enhance code quality. The framework is designed to be adaptable for different project types and team sizes, positioning AI as an active collaborator in modern development practices.",
       "researchers": ["Nipun Bhathiya"],
-      "image": "/images/project4.png"
+      "image": "../images/project4.png"
     }
   ],
   "publications": [
@@ -36,32 +36,32 @@
       "authors": "Author 1, Author 2",
       "venue": "Conference Name",
       "description": "Brief description of the paper.",
-      "pdf": "/papers/paper1.pdf",
-      "image": "/images/paper1.jpg"
+      "pdf": "../papers/paper1.pdf",
+      "image": "../images/paper1.jpg"
     },
     {
       "title": "Title of Paper 02",
       "authors": "Author 3, Author 4",
       "venue": "Conference Name",
       "description": "Brief description of the paper.",
-      "pdf": "/papers/paper2.pdf",
-      "image": "/images/paper2.jpg"
+      "pdf": "../papers/paper2.pdf",
+      "image": "../images/paper2.jpg"
     },
     {
       "title": "Title of Paper 03",
       "authors": "Author 1, Author 2",
       "venue": "Conference Name",
       "description": "Brief description of the paper.",
-      "pdf": "/papers/paper1.pdf",
-      "image": "/images/paper1.jpg"
+      "pdf": "../papers/paper1.pdf",
+      "image": "../images/paper1.jpg"
     },
     {
       "title": "Title of Paper 04",
       "authors": "Author 3, Author 4",
       "venue": "Conference Name",
       "description": "Brief description of the paper.",
-      "pdf": "/papers/paper2.pdf",
-      "image": "/images/paper2.jpg"
+      "pdf": "../papers/paper2.pdf",
+      "image": "../mages/paper2.jpg"
     }
   ]
 }
