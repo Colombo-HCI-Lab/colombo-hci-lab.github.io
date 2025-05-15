@@ -2,27 +2,27 @@
   "bannerDescription": "The Colombo HCI lab at University of  Colombo School of Computing. We are working on exciting research in Human -Computer Interaction. By focusing on user needs, testing new ways to interact with technology, and ensuring our designs are practical, we aim to create technologies that improve everyday life.",
 "projects": [
     {
-      "image": "images/project1.png",
+      "image": "/images/project1.png",
       "title": "Deepfake Literacy",
-      "link": "research.html#topic-1",
+      "link": "/Research/research.html#topic-1",
       "researchers": "Dr.Dilrukshi Gamage, Ms. Dilki Sewwandi, Ms. Dilaxshini Dunstan"
     },
     {
-      "image": "images/project2.jpeg",
+      "image": "/images/project2.jpeg",
       "title": "Cognitive Aware Interfaces",
-      "link": "research.html#topic-2",
+      "link": "/Research/research.html#topic-2",
       "researchers": "Ms. Samudi Perera"
     },
     {
-      "image": "images/project3.png",
+      "image": "/images/project3.png",
       "title": "AI Explainability",
-      "link": "research.html#topic-3",
+      "link": "/Research/research.html#topic-3",
       "researchers": "Ms. Nirasha Nelki"
     },
     {
-      "image": "images/project4.png",
+      "image": "/images/project4.png",
       "title": "AI-Driven Development",
-      "link": "research.html#topic-4",
+      "link": "/Research/research.html#topic-4",
       "researchers": "Mr. Nipun Bhathiya"
     }
 
