@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   console.log("HCI Lab page loaded");
 
   // Fetch data from JSON file (index.json)
-  fetch('../data/index.json')
+  fetch('/colombo-hci-lab.github.io/data/index.json')
     .then(response => response.json())
     .then(data => {
       loadResearchAreas(data.researchAreas); // Load research areas
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     .catch(error => console.error("Failed to load index.json:", error));
 
   // Fetch data from project.json and load projects
-  fetch('../data/project.json')
+  fetch('/colombo-hci-lab.github.io/data/project.json')
     .then(response => response.json())
     .then(data => {
       loadProjects(data.projects);
