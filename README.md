@@ -5,7 +5,7 @@
 
 ### 📥 Clone the Repository
 ```bash
-git clone https://github.com/Colombo-HCI-Lab/ColomboHCILab.git
+git clone https://github.com/Colombo-HCI-Lab/colombo-hci-lab.github.io.git
 cd Colombo-HCI-Lab
 code .
 ````
