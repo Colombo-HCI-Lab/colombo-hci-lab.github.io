@@ -73,13 +73,6 @@
       "linkedin": "https://www.linkedin.com/in/emilydavis",
       "email": "mailto:emily.davis@example.com",
       "github": "https://github.com/emilydavis"
-    },
-    {
-      "name": "Volunteer02",
-      "photo": "/images/ra.png",
-      "linkedin": "https://www.linkedin.com/in/daniellee",
-      "email": "mailto:daniel.lee@example.com",
-      "github": "https://github.com/daniellee"
     }
   ],
   "collaborators": [
