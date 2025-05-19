@@ -3,7 +3,7 @@
   "projects": [
     {
       "id": "topic-1",
-      "name": "Deepfake Literacy",
+      "name": "Deepfake Literacy Intervention",
       "description": "Educating the public to recognize and respond to deepfake media.",
       "researchers": ["Dilki Sewwandi,", "Dilaxshini Dunstan"],
        "image": "/images/project1.png"
