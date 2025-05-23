@@ -32,10 +32,10 @@
   ],
   "publications": [
     {
-      "title": "End User Authoring of Personalized Content Classifiers: Comparing Example Labeling, Rule Writing, and LLM Prompting",
-      "authors": "Leijie Wang, Kathryn Yurechko, Pranati Dani, Quan Ze (Jim) Chen, Amy Zhang",
+      "title": "Labeling Synthetic Content: User Perceptions of Label Designs for AI-Generated Content on Social Media",
+      "authors": "Gamage, Dilrukshi;Sewwandi, Dilki; Zhang, Min; Bandara, Arosha K",
       "venue": "CHI 2025",
-      "description": "To make creating personal classifiers for content curation easier for such users, tools should support rapid initialization and iterative refinement. In this work, we then compare three strategies-(1) example labeling, (2) rule writing, and (3) large language model (LLM) prompting-for end users to build personal content classifiers in a lab experiment.",
+      "description": "This study tested ten warning label designs for AI-generated content on social media and found that while labels increased belief that content was AI-made, only certain designs were trusted—yet none significantly changed user engagement like likes or shares. Differences in engagement were more influenced by content type, such as political versus entertainment.",
       "pdf": "#"
     },
     {
